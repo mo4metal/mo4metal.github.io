@@ -4,13 +4,34 @@
     "href": "index.html",
     "title": "Zhe Min’s NM2207 Website",
     "section": "",
-    "text": "NM2207 PROJECT\nThis is where I will be analysing the following dataset that I have found on Kaggle:\nhttps://www.kaggle.com/datasets/gsimonx37/letterboxd?select=themes.csv"
+    "text": "Community was an American sitcom produced by NBC that ran from 2009 to 2014. It had a historically rocky start, middle and end, with show runner Dan Harmon being fired midway during the show, before being brought back for the show’s 5th and 6th seasons.\n\n\n\nCommunity frequently experimented with genre and often utilised its sitcom format to parody existing sitcom tropes. This led it to become a cult classic amongst fans who were frequently exposed to and aware of such tropes, but it meant that Community did not do well with the masses.\nThus, I plan to explore the trends within Community’s rise and fall, with an analysis of each episode’s IMDb ratings. I will also look at categories such as directors and even episode titles. Since Community ran for 6 seasons and 110 episodes, it makes for quite a detailed and interesting analysis.\n\n\n\nI will be using this dataset uploaded by Bill Cruise, which was updated 2 years ago."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "ABOUT ME\nI am a Y3 Literature major with a second major in Communications and New Media.\nI like cats and Pierce the Veil :)"
+    "text": "ABOUT ME\nI am a Y3 Literature major with a second major in Communications and New Media.\nI like cats and Pierce the Veil :) My favourite TV shows are NBC’s 30 Rock, Community and Netflix’s Russian Doll."
+  },
+  {
+    "objectID": "index.html#community-2009-2014",
+    "href": "index.html#community-2009-2014",
+    "title": "Zhe Min’s NM2207 Website",
+    "section": "",
+    "text": "Community was an American sitcom produced by NBC that ran from 2009 to 2014. It had a historically rocky start, middle and end, with show runner Dan Harmon being fired midway during the show, before being brought back for the show’s 5th and 6th seasons."
+  },
+  {
+    "objectID": "index.html#data-analysis",
+    "href": "index.html#data-analysis",
+    "title": "Zhe Min’s NM2207 Website",
+    "section": "",
+    "text": "Community frequently experimented with genre and often utilised its sitcom format to parody existing sitcom tropes. This led it to become a cult classic amongst fans who were frequently exposed to and aware of such tropes, but it meant that Community did not do well with the masses.\nThus, I plan to explore the trends within Community’s rise and fall, with an analysis of each episode’s IMDb ratings. I will also look at categories such as directors and even episode titles. Since Community ran for 6 seasons and 110 episodes, it makes for quite a detailed and interesting analysis."
+  },
+  {
+    "objectID": "index.html#dataset",
+    "href": "index.html#dataset",
+    "title": "Zhe Min’s NM2207 Website",
+    "section": "",
+    "text": "I will be using this dataset uploaded by Bill Cruise, which was updated 2 years ago."
   }
 ]
