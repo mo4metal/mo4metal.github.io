@@ -17,3 +17,9 @@ Thus, I plan to explore the trends within Community's rise and fall, with an ana
 ## Dataset
 
 I will be using [this dataset](https://www.kaggle.com/datasets/bcruise/community-episodes-data/data) uploaded by Bill Cruise, which was updated 2 years ago.
+
+## Sample Shiny App
+
+```{=html}
+<iframe height="400" width="100%" frameborder="no" src="https://mo4metal.shinyapps.io/sampleappnm2207/"> </iframe>
+```
