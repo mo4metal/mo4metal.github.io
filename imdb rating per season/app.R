@@ -20,25 +20,27 @@ ui <- fluidPage(
                   selected = "1")
     ),
     mainPanel(
-      plotOutput("scatter_plot")
+      plotOutput("line_graph")
     )
   )
 )
 
 
 server <- function(input, output) {
-  output$scatter_plot <- renderPlot({
+  output$line_graph <- renderPlot({
     season_data <- subset(community_data, season == input$season)
     
     ggplot(season_data, aes(x = episode_num_overall, y = imdb_rating)) +
-      geom_point() +
+      geom_line(color = "black") +  
+      geom_point(color = "purple") +
       scale_color_manual(values = season_colors) +
       labs(x = "Episode", 
            y = "IMDb Rating", 
            title = paste("IMDb Ratings for Community episodes (Season", input$season, ")")) +
       scale_x_continuous(breaks = season_data$episode_num_overall, 
-                         labels = season_data$episode_num_overall) +  
+                         labels = season_data$episode_num_overall) +
       theme(plot.margin = margin(r = 2, unit = "cm"))
+    
     
   })
 }
