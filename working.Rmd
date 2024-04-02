@@ -1,0 +1,307 @@
+---
+title: "test"
+author: "Zhemin Ong"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+
+library(tidyverse)
+community <- read_csv("Community.csv")
+community_data <- community %>% select(-c("episode_num"))
+library(shiny)
+
+```
+
+## IMDb Ratings for Community episodes (all seasons)
+
+```{r}
+
+season_colors <- c("1" = "blue",
+                   "2" = "green",
+                   "3" = "red",
+                   "4" = "orange",
+                   "5" = "purple",
+                   "6" = "black")
+
+
+ggplot(community_data, aes(x = episode_num_overall, y = imdb_rating, color = as.factor(season))) +
+  geom_point() +
+  scale_color_manual(values = season_colors) +
+  labs(x = "Episode", 
+       y = "IMDb Rating", 
+       title = "IMDb Ratings for Community episodes", color = "Season") +
+  theme(plot.margin = margin(r = 2, unit = "cm"))
+
+```
+
+## Bar graph: Mean imdb ratings by director
+
+```{r}
+
+library(dplyr)
+
+best_director <- community_data %>%
+  group_by(directed_by) %>%
+  summarise(mean_imdb_rating = mean(imdb_rating), 
+            count = n()) %>%
+  arrange(desc(mean_imdb_rating))
+
+print(best_director)
+ggplot(best_director, aes(x = directed_by, y = mean_imdb_rating)) +
+  geom_col(fill = "pink", width = 0.7) +
+  labs(x = "Director", y = "Mean IMDb Rating", title = "Mean IMDb Ratings by Director") +
+  theme_minimal() +
+  coord_flip()
+
+```
+
+## Scatterplot: IMDb Ratings for Community Episodes (Select season)
+
+```{r}
+
+library(shiny)
+library(ggplot2)
+
+
+ui <- fluidPage(
+  titlePanel("IMDb Ratings for Community Episodes"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("season", "Select Season:",
+                  choices = c("1", "2", "3", "4", "5", "6"),
+                  selected = "1")
+    ),
+    mainPanel(
+      plotOutput("scatter_plot")
+    )
+  )
+)
+
+
+server <- function(input, output) {
+  output$scatter_plot <- renderPlot({
+    season_data <- subset(community_data, season == input$season)
+  
+    ggplot(season_data, aes(x = episode_num_overall, y = imdb_rating)) +
+      geom_point() +
+      scale_color_manual(values = season_colors) +
+      labs(x = "Episode", y = "IMDb Rating", title = paste("IMDb Ratings for Community episodes (Season", input$season, ")")) +
+      theme(plot.margin = margin(r = 2, unit = "cm"))
+  })
+}
+
+shinyApp(ui = ui, server = server)
+
+```
+
+```{r}
+
+season_1_data <- community_data %>%
+  filter(season == 1)
+
+# Create a line chart for Season 1
+ggplot(season_1_data, aes(x = episode_num_in_season, y = us_viewers)) +
+  geom_line(color = "blue") +
+  geom_point(color = "red", size = 1) +  # Add points for each data point
+  labs(title = "Viewership Trend for Season 1",
+       x = "Episode Number",
+       y = "Viewership (USA)") +
+  theme_minimal() +
+  scale_y_continuous(labels = scales::comma)
+
+```
+
+## Line graph: Community Viewership Trends per Season
+
+```{r}
+
+library(shiny)
+library(tidyverse)
+
+ui <- fluidPage(
+  titlePanel("Community Viewership Trends per Season"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("season", "Select Season:",
+                  choices = unique(community_data$season))  
+    ),
+    
+    mainPanel(
+      plotOutput("linePlot")
+    )
+  )
+)
+
+server <- function(input, output) {
+  selected_season <- reactive({
+    filter(community_data, season == input$season)
+  })
+  
+
+  output$linePlot <- renderPlot({
+    ggplot(selected_season(), aes(x = episode_num_in_season, y = us_viewers)) +
+      geom_line(color = "blue") +
+      geom_point(color = "red", size = 1) +  
+      labs(title = paste("Viewership Trend for Season", input$season),
+           x = "Episode Number",
+           y = "Viewership") +
+      theme_minimal() +  
+      scale_y_continuous(labels = scales::comma)
+  })
+}
+
+shinyApp(ui = ui, server = server)
+
+
+```
+
+```{r}
+
+season_1_data <- community_data %>%
+  filter(season == 1)
+
+ggplot(season_1_data, aes(x = us_viewers, y = imdb_rating)) +
+  geom_point(color = "purple", size = 2) +
+  labs(title = "Relationship between IMDb Rating and Viewership for Season 1",
+       x = "Viewership",
+       y = "IMDb Rating") +
+  theme_minimal() +
+  scale_x_continuous(labels = scales::comma)  
+
+```
+
+## Scatterplot: Relationship between IMDb Rating and Viewership by Season
+
+```{r}
+
+
+ui <- fluidPage(
+  titlePanel("Relationship between IMDb Rating and Viewership by Season"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("season", "Select Season:",
+                  choices = unique(community_data$season))
+    ),
+    mainPanel(
+      plotOutput("scatterPlot")
+    )
+  )
+)
+
+server <- function(input, output) {
+  
+  output$scatterPlot <- renderPlot({
+    season_data <- community_data %>%
+      filter(season == input$season)
+    ggplot(season_data, aes(x = us_viewers, y = imdb_rating)) +
+      geom_point(color = "blue", size = 3) +
+      labs(title = paste("Relationship between IMDb Rating and Viewership for Season", input$season),
+           x = "Viewership",
+           y = "IMDb Rating") +
+      theme_minimal() +
+      scale_x_continuous(labels = scales::comma)  
+  })
+}
+
+shinyApp(ui = ui, server = server)
+
+```
+
+## Episode details (enter number overall)
+
+```{r}
+ui <- fluidPage(
+  titlePanel("Find Episode Details"),
+  sidebarLayout(
+    sidebarPanel(
+      numericInput("episode_num_overall", "Enter Episode Number:", value = 1, min = 1, max = max(community_data$episode_num_overall))
+    ),
+    mainPanel(
+      h4("Episode Details:"),
+      verbatimTextOutput("episode_details")
+    )
+  )
+)
+
+# Define server logic
+server <- function(input, output) {
+  
+  # Function to retrieve episode details
+  output$episode_details <- renderText({
+    episode_details <- community_data %>%
+      filter(episode_num_overall == input$episode_num_overall) %>%
+      select(imdb_rating, title, desc, directed_by) %>%
+      slice(1)
+    
+    if (nrow(episode_details) == 0) {
+      "Episode not found."
+    } else {
+      paste("IMDb Rating:", episode_details$imdb_rating, "\n",
+            "Title:", episode_details$title, "\n",
+            "Directed by:", episode_details$directed_by, "\n",
+            "Description:", episode_details$desc
+            )
+    }
+  })
+}
+
+
+shinyApp(ui = ui, server = server)
+```
+
+## Episode Details (Dropdown select)
+
+```{r}
+
+
+ui <- fluidPage(
+  titlePanel("Find Episode Details"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("season", "Select Season Number:",
+                  choices = unique(community_data$season)),
+      uiOutput("episode_select")
+    ),
+    mainPanel(
+      h4("Episode Details:"),
+      verbatimTextOutput("episode_details")
+    )
+  )
+)
+
+server <- function(input, output, session) {
+  output$episode_select <- renderUI({
+    episode_choices <- community_data %>%
+      filter(season == input$season) %>%
+      pull(episode_num_in_season) %>%
+      sort()
+    
+    selectInput("episode_num_in_season", "Select Episode Number:",
+                choices = episode_choices)
+  })
+  
+  output$episode_details <- renderText({
+    episode_details <- community_data %>%
+      filter(season == input$season, episode_num_in_season == input$episode_num_in_season) %>%
+      select(imdb_rating, title, desc, directed_by) %>%
+      slice(1)
+    
+    if (nrow(episode_details) == 0) {
+      "Episode not found."
+    } else {
+      paste("Season:", input$season, "\n",
+            "Episode Number:", input$episode_num_in_season, "\n",
+            "IMDb Rating:", episode_details$imdb_rating, "\n",
+            "Title:", episode_details$title, "\n",
+            "Directed by:", episode_details$directed_by, "\n",
+            "Description:", episode_details$desc)
+    }
+  })
+}
+
+shinyApp(ui = ui, server = server)
+
+
+```

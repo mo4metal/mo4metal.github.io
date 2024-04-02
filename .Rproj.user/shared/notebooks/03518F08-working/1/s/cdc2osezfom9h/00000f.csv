@@ -1,0 +1,130 @@
+"0",""
+"0",""
+"0","ui <- fluidPage("
+"0","  titlePanel(""Find Episode Details""),"
+"0","  sidebarLayout("
+"0","    sidebarPanel("
+"0","      selectInput(""season"", ""Select Season Number:"","
+"0","                  choices = unique(community_data$season)),"
+"0","      uiOutput(""episode_select"")"
+"0","    ),"
+"0","    mainPanel("
+"0","      h4(""Episode Details:""),"
+"0","      verbatimTextOutput(""episode_details"")"
+"0","    )"
+"0","  )"
+"0",")"
+"0",""
+"0","server <- function(input, output, session) {"
+"0","  output$episode_select <- renderUI({"
+"0","    episode_choices <- community_data %>%"
+"0","      filter(season == input$season) %>%"
+"0","      pull(episode_num_in_season) %>%"
+"0","      sort()"
+"0","    "
+"0","    selectInput(""episode_num_in_season"", ""Select Episode Number:"","
+"0","                choices = episode_choices)"
+"0","  })"
+"0","  "
+"0","  output$episode_details <- renderText({"
+"0","    episode_details <- community_data %>%"
+"0","      filter(season == input$season, episode_num_in_season == input$episode_num_in_season) %>%"
+"0","      select(imdb_rating, title, desc, directed_by) %>%"
+"0","      slice(1)"
+"0","    "
+"0","    if (nrow(episode_details) == 0) {"
+"0","      ""Episode not found."""
+"0","    } else {"
+"0","      paste(""Season:"", input$season, ""\n"","
+"0","            ""Episode Number:"", input$episode_num_in_season, ""\n"","
+"0","            ""IMDb Rating:"", episode_details$imdb_rating, ""\n"","
+"0","            ""Title:"", episode_details$title, ""\n"","
+"0","            ""Directed by:"", episode_details$directed_by, ""\n"","
+"0","            ""Description:"", episode_details$desc)"
+"0","    }"
+"0","  })"
+"0","}"
+"0",""
+"0","shinyApp(ui = ui, server = server)"
+"2","
+Listening on http://127.0.0.1:5131
+"
+"2","Warning: Error in filter: [38;5;232m[36mℹ[38;5;232m In argument: `episode_num_in_season == input$episode_num_in_season`.[39m
+[1mCaused by error:[22m
+[38;5;232m[33m![38;5;232m `..2` must be of size 109 or 1, not size 0.[39m"
+"2","  118: [37m<Anonymous>[39m
+"
+"2",""
+"2","  117: [37msignalCondition[39m
+"
+"2",""
+"2","  116: [37msignal_abort[39m
+"
+"2",""
+"2","  115: [37mabort[39m
+"
+"2",""
+"2","  114: [37m<Anonymous>[39m
+"
+"2",""
+"2","  113: [37msignalCondition[39m
+"
+"2",""
+"2","  112: [37msignal_abort[39m
+"
+"2",""
+"2","  111: [37mabort[39m
+"
+"2",""
+"2","  110: [37mdplyr_internal_error[39m
+"
+"2",""
+"2","  109: [37meval[39m
+"
+"2",""
+"2","  108: [37mmask$eval_all_filter[39m
+"
+"2",""
+"2","  106: [37mfilter_eval[39m
+"
+"2",""
+"2","  105: [37mfilter_rows[39m
+"
+"2",""
+"2","  104: [37mfilter.data.frame[39m
+"
+"2",""
+"2","  103: [37mfilter[39m
+"
+"2",""
+"2","  102: [37mselect[39m
+"
+"2",""
+"2","  101: [37mslice[39m
+"
+"2",""
+"2","  100: [37m%>%[39m
+"
+"2",""
+"2","   99: [34m[1mrenderText [#13][22m[39m
+"
+"2",""
+"2","   98: [37mfunc[39m
+"
+"2",""
+"2","   85: [37mrenderFunc[39m
+"
+"2",""
+"2","   84: [37moutput$episode_details[39m
+"
+"2",""
+"2","    3: [37mrunApp[39m
+"
+"2",""
+"2","    2: [37mprint.shiny.appobj[39m
+"
+"2",""
+"2","    1: [37m<Anonymous>[39m
+"
+"2","Input to asJSON(keep_vec_names=TRUE) is a named vector. In a future version of jsonlite, this option will not be supported, and named vectors will be translated into arrays instead of objects. If you want JSON object output, please use a named list instead. See ?toJSON.
+"

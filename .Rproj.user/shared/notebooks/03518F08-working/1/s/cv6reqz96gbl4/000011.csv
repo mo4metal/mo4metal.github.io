@@ -1,0 +1,6 @@
+"0","ggplot(best_director, aes(x = directed_by, y = mean_imdb_rating)) +"
+"0","  geom_col(fill = ""pink"", width = 0.7) +"
+"0","  labs(x = ""Director"", y = ""Mean IMDb Rating"", title = ""Mean IMDb Ratings by Director"") +"
+"0","  theme_minimal() +"
+"0","  coord_flip()"
+"0",""
