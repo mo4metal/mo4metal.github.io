@@ -55,7 +55,7 @@ ggplot(community_data, aes(x = episode_num_overall, y = imdb_rating, color = as.
 
 ## Viewership Trends Over the Seasons
 
-```{r, error=FALSE, message=FALSE, echo=FALSE}
+```{r, error=FALSE, message=FALSE, echo=FALSE, warning=FALSE}
 
 ggplot(community, aes(x = season, y = us_viewers)) +
   geom_point() +

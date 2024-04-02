@@ -39,7 +39,7 @@
     "href": "data_story.html",
     "title": "Data Story",
     "section": "",
-    "text": "Select an episode to learn more about it!\n \n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n \n\n\n\n\n\nWarning: Removed 13 rows containing missing values or values outside the scale range\n(`geom_point()`)."
+    "text": "Select an episode to learn more about it!"
   },
   {
     "objectID": "data_story.html#episode-summaries",
