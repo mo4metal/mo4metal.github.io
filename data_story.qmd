@@ -12,6 +12,7 @@ Select an episode to learn more about it!
 <iframe height="400" width="100%" frameborder="no" src="https://mo4metal.shinyapps.io/episode_search/"> </iframe>
 ```
 
+
 ## IMDb Ratings for Community episodes (all seasons)
 
 ```{r}
@@ -40,9 +41,55 @@ ggplot(community_data, aes(x = episode_num_overall, y = imdb_rating, color = as.
 
 ```
 
+## IMDB Ratings Per Season
+
+```{=html}
+<iframe height="400" width="100%" frameborder="no" src="https://mo4metal.shinyapps.io/imdb_rating_per_season/"> </iframe>
+```
+
 ## IMDB Ratings Against Viewership
 
 ```{=html}
 <iframe height="400" width="100%" frameborder="no" src="https://mo4metal.shinyapps.io/imdb_viewership/"> </iframe>
+```
+
+## Viewership Trends Over the Seasons
+
+```{r}
+
+ggplot(community, aes(x = season, y = us_viewers)) +
+  geom_point() +
+  scale_y_continuous(labels = scales::comma, limits = c(1000000, 8000000)) +
+  labs(x = "Season", y = "Number of Viewers", title = "Viewership Trends of Episodes Over Seasons")
+
+
+```
+
+
+## Viewership Trends Per Season
+
+```{=html}
+<iframe height="400" width="100%" frameborder="no" src="https://mo4metal.shinyapps.io/viewership_per_season/"> </iframe>
+```
+
+## Mean IMDB Rating by Director
+
+```{r}
+
+library(dplyr)
+
+best_director <- community_data %>%
+  group_by(directed_by) %>%
+  summarise(mean_imdb_rating = mean(imdb_rating), 
+            count = n()) %>%
+  arrange(desc(mean_imdb_rating))
+
+
+ggplot(best_director, aes(x = reorder(directed_by, mean_imdb_rating), y = mean_imdb_rating)) +
+  geom_col(fill = "pink", width = 0.7) +
+  labs(x = "Director", y = "Mean IMDb Rating", title = "Mean IMDb Ratings by Director") +
+  theme_minimal() +
+  coord_flip()
+
 ```
 

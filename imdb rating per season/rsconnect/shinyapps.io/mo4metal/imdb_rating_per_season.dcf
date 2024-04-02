@@ -1,0 +1,12 @@
+name: imdb_rating_per_season
+title: imdb_rating_per_season
+username: mo4metal
+account: mo4metal
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11641191
+bundleId: 8444611
+url: https://mo4metal.shinyapps.io/imdb_rating_per_season/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,12 @@
+name: viewership_per_season
+title: viewership_per_season
+username: mo4metal
+account: mo4metal
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11641281
+bundleId: 8444641
+url: https://mo4metal.shinyapps.io/viewership_per_season/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

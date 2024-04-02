@@ -12,6 +12,7 @@ community <- read_csv("Community.csv")
 community_data <- community %>% select(-c("episode_num"))
 library(shiny)
 
+
 ```
 
 ## IMDb Ratings for Community episodes (all seasons)
@@ -147,6 +148,8 @@ server <- function(input, output) {
       labs(title = paste("Viewership Trend for Season", input$season),
            x = "Episode Number",
            y = "Viewership") +
+      scale_x_continuous(breaks = selected_season()$episode_num_in_season, 
+                     labels = selected_season()$episode_num_in_season) +
       theme_minimal() +  
       scale_y_continuous(labels = scales::comma)
   })

@@ -147,7 +147,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#episode-summaries" id="toc-episode-summaries" class="nav-link" data-scroll-target="#episode-summaries">Episode Summaries</a></li>
   <li><a href="#imdb-ratings-for-community-episodes-all-seasons" id="toc-imdb-ratings-for-community-episodes-all-seasons" class="nav-link" data-scroll-target="#imdb-ratings-for-community-episodes-all-seasons">IMDb Ratings for Community episodes (all seasons)</a></li>
+  <li><a href="#imdb-ratings-per-season" id="toc-imdb-ratings-per-season" class="nav-link" data-scroll-target="#imdb-ratings-per-season">IMDB Ratings Per Season</a></li>
   <li><a href="#imdb-ratings-against-viewership" id="toc-imdb-ratings-against-viewership" class="nav-link" data-scroll-target="#imdb-ratings-against-viewership">IMDB Ratings Against Viewership</a></li>
+  <li><a href="#viewership-trends-over-the-seasons" id="toc-viewership-trends-over-the-seasons" class="nav-link" data-scroll-target="#viewership-trends-over-the-seasons">Viewership Trends Over the Seasons</a></li>
+  <li><a href="#viewership-trends-per-season" id="toc-viewership-trends-per-season" class="nav-link" data-scroll-target="#viewership-trends-per-season">Viewership Trends Per Season</a></li>
+  <li><a href="#mean-imdb-rating-by-director" id="toc-mean-imdb-rating-by-director" class="nav-link" data-scroll-target="#mean-imdb-rating-by-director">Mean IMDB Rating by Director</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -232,9 +236,55 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 </div>
 </div>
 </section>
+<section id="imdb-ratings-per-season" class="level2">
+<h2 class="anchored" data-anchor-id="imdb-ratings-per-season">IMDB Ratings Per Season</h2>
+<iframe height="400" width="100%" frameborder="no" src="https://mo4metal.shinyapps.io/imdb_rating_per_season/"> </iframe>
+</section>
 <section id="imdb-ratings-against-viewership" class="level2">
 <h2 class="anchored" data-anchor-id="imdb-ratings-against-viewership">IMDB Ratings Against Viewership</h2>
 <iframe height="400" width="100%" frameborder="no" src="https://mo4metal.shinyapps.io/imdb_viewership/"> </iframe>
+</section>
+<section id="viewership-trends-over-the-seasons" class="level2">
+<h2 class="anchored" data-anchor-id="viewership-trends-over-the-seasons">Viewership Trends Over the Seasons</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(community, <span class="fu">aes</span>(<span class="at">x =</span> season, <span class="at">y =</span> us_viewers)) <span class="sc">+</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>comma, <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">1000000</span>, <span class="dv">8000000</span>)) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Season"</span>, <span class="at">y =</span> <span class="st">"Number of Viewers"</span>, <span class="at">title =</span> <span class="st">"Viewership Trends of Episodes Over Seasons"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 13 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="data_story_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="viewership-trends-per-season" class="level2">
+<h2 class="anchored" data-anchor-id="viewership-trends-per-season">Viewership Trends Per Season</h2>
+<iframe height="400" width="100%" frameborder="no" src="https://mo4metal.shinyapps.io/viewership_per_season/"> </iframe>
+</section>
+<section id="mean-imdb-rating-by-director" class="level2">
+<h2 class="anchored" data-anchor-id="mean-imdb-rating-by-director">Mean IMDB Rating by Director</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>best_director <span class="ot">&lt;-</span> community_data <span class="sc">%&gt;%</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(directed_by) <span class="sc">%&gt;%</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_imdb_rating =</span> <span class="fu">mean</span>(imdb_rating), </span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">count =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(mean_imdb_rating))</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(best_director, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(directed_by, mean_imdb_rating), <span class="at">y =</span> mean_imdb_rating)) <span class="sc">+</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"pink"</span>, <span class="at">width =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Director"</span>, <span class="at">y =</span> <span class="st">"Mean IMDb Rating"</span>, <span class="at">title =</span> <span class="st">"Mean IMDb Ratings by Director"</span>) <span class="sc">+</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="data_story_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
 
 
 </section>
