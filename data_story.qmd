@@ -15,7 +15,7 @@ Select an episode to learn more about it!
 
 ## IMDb Ratings for Community episodes (all seasons)
 
-```{r}
+```{r, error=FALSE, message=FALSE, echo=FALSE}
 
 library(tidyverse)
 community <- read_csv("Community.csv")
@@ -55,7 +55,7 @@ ggplot(community_data, aes(x = episode_num_overall, y = imdb_rating, color = as.
 
 ## Viewership Trends Over the Seasons
 
-```{r}
+```{r, error=FALSE, message=FALSE, echo=FALSE}
 
 ggplot(community, aes(x = season, y = us_viewers)) +
   geom_point() +
@@ -74,7 +74,7 @@ ggplot(community, aes(x = season, y = us_viewers)) +
 
 ## Mean IMDB Rating by Director
 
-```{r}
+```{r, error=FALSE, message=FALSE, echo=FALSE}
 
 library(dplyr)
 
