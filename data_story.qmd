@@ -81,12 +81,13 @@ library(dplyr)
 best_director <- community_data %>%
   group_by(directed_by) %>%
   summarise(mean_imdb_rating = mean(imdb_rating), 
-            count = n()) %>%
+            episodes_count = n()) %>%
   arrange(desc(mean_imdb_rating))
 
 
 ggplot(best_director, aes(x = reorder(directed_by, mean_imdb_rating), y = mean_imdb_rating)) +
   geom_col(fill = "pink", width = 0.7) +
+  geom_text(aes(label = episodes_count), hjust = -1, vjust = 0.5, size = 3)+
   labs(x = "Director", y = "Mean IMDb Rating", title = "Mean IMDb Ratings by Director") +
   theme_minimal() +
   coord_flip()
