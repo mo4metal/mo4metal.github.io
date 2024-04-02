@@ -1,0 +1,111 @@
+season,episode_num_in_season,episode_num_overall,title,directed_by,written_by,original_air_date,prod_code,us_viewers
+1,1,1,Pilot,Anthony Russo & Joe Russo,Dan Harmon,2009-09-17,100,7890000.0
+1,2,2,Spanish 101,Joe Russo,Dan Harmon,2009-09-24,101,5390000.0
+1,3,3,Introduction to Film,Anthony Russo,Tim Hobert & Jon Pollack,2009-10-01,102,5860000.0
+1,4,4,Social Psychology,Anthony Russo,Liz Cackowski,2009-10-08,104,4870000.0
+1,5,5,Advanced Criminal Law,Joe Russo,Andrew Guest,2009-10-15,105,5010000.0
+1,6,6,"Football, Feminism and You",Joe Russo,Hilary Winston,2009-10-22,103,5180000.0
+1,7,7,Introduction to Statistics,Justin Lin,Tim Hobert & Jon Pollack,2009-10-29,106,5320000.0
+1,8,8,Home Economics,Anthony Russo,Lauren Pomerantz,2009-11-05,107,5450000.0
+1,9,9,Debate 109,Joe Russo,Tim Hobert,2009-11-12,109,5090000.0
+1,10,10,Environmental Science,Seth Gordon,Zach Paez,2009-11-19,108,4860000.0
+1,11,11,The Politics of Human Sexuality,Anthony Russo,Hilary Winston,2009-12-03,110,5420000.0
+1,12,12,Comparative Religion,Adam Davidson,Liz Cackowski,2009-12-10,111,5510000.0
+1,13,13,Investigative Journalism,Joe Russo,Jon Pollack & Tim Hobert,2010-01-14,113,5420000.0
+1,14,14,Interpretive Dance,Justin Lin,Lauren Pomerantz,2010-01-21,112,4730000.0
+1,15,15,Romantic Expressionism,Joe Russo,Andrew Guest,2010-02-04,115,5230000.0
+1,16,16,Communication Studies,Adam Davidson,Chris McKenna,2010-02-11,116,5150000.0
+1,17,17,Physical Education,Anthony Russo,Jessie Miller,2010-03-04,118,5060000.0
+1,18,18,Basic Genealogy,Ken Whittingham,Karey Dornetto,2010-03-11,117,4700000.0
+1,19,19,Beginner Pottery,Anthony Russo,Hilary Winston,2010-03-18,114,5210000.0
+1,20,20,The Science of Illusion,Adam Davidson,Zach Paez,2010-03-25,122,5070000.0
+1,21,21,Contemporary American Poultry,Tristram Shapeero,Emily Cutler & Karey Dornetto,2010-04-22,123,3670000.0
+1,22,22,The Art of Discourse,Adam Davidson,Chris McKenna,2010-04-29,124,4360000.0
+1,23,23,Modern Warfare,Justin Lin,Emily Cutler,2010-05-06,119,4350000.0
+1,24,24,English as a Second Language,Gail Mancuso,Tim Hobert,2010-05-13,120,4490000.0
+1,25,25,Pascal's Triangle Revisited,Joe Russo,Hilary Winston,2010-05-20,121,4410000.0
+2,1,26,Anthropology 101,Joe Russo,Chris McKenna,2010-09-23,201,5010000.0
+2,2,27,Accounting for Lawyers,Joe Russo,Emily Cutler,2010-09-30,203,4530000.0
+2,3,28,The Psychology of Letting Go,Anthony Russo,Hilary Winston,2010-10-07,202,4200000.0
+2,4,29,Basic Rocket Science,Anthony Russo,Andy Bobrow,2010-10-14,204,4810000.0
+2,5,30,Messianic Myths and Ancient Peoples,Tristram Shapeero,Andrew Guest,2010-10-21,205,4460000.0
+2,6,31,Epidemiology,Anthony Hemingway,Karey Dornetto,2010-10-28,206,5640000.0
+2,7,32,Aerodynamics of Gender,Tristram Shapeero,Adam Countee,2010-11-04,207,4610000.0
+2,8,33,Cooperative Calligraphy,Joe Russo,Megan Ganz,2010-11-11,208,4530000.0
+2,9,34,Conspiracy Theories and Interior Design,Adam Davidson,Chris McKenna,2010-11-18,210,4410000.0
+2,10,35,Mixology Certification,Jay Chandrasekhar,Andy Bobrow,2010-12-02,209,4550000.0
+2,11,36,Abed's Uncontrollable Christmas,Duke Johnson,Dino Stamatopoulos & Dan Harmon,2010-12-09,222,4290000.0
+2,12,37,Asian Population Studies,Anthony Russo,Emily Cutler,2011-01-20,211,4730000.0
+2,13,38,Celebrity Pharmacology,Fred Goss,Hilary Winston,2011-01-27,212,4590000.0
+2,14,39,Advanced Dungeons & Dragons,Joe Russo,Andrew Guest,2011-02-03,214,4370000.0
+2,15,40,Early 21st Century Romanticism,Steven Sprung,Karey Dornetto,2011-02-10,213,3810000.0
+2,16,41,Intermediate Documentary Filmmaking,Joe Russo,Megan Ganz,2011-02-17,215,4110000.0000000005
+2,17,42,Intro to Political Science,Jay Chandrasekhar,Adam Countee,2011-02-24,216,3790000.0
+2,18,43,Custody Law and Eastern European Diplomacy,Anthony Russo,Andy Bobrow,2011-03-17,217,4150000.0000000005
+2,19,44,Critical Film Studies,Richard Ayoade,Sona Panos,2011-03-24,218,4460000.0
+2,20,45,Competitive Wine Tasting,Joe Russo,Emily Cutler,2011-04-14,219,3490000.0
+2,21,46,Paradigms of Human Memory,Tristram Shapeero,Chris McKenna,2011-04-21,220,3170000.0
+2,22,47,Applied Anthropology and Culinary Arts,Jay Chandrasekhar,Karey Dornetto,2011-04-28,221,3350000.0
+2,23,48,A Fistful of Paintballs,Joe Russo,Andrew Guest,2011-05-05,223,3490000.0
+2,24,49,For a Few Paintballs More,Joe Russo,Hilary Winston,2011-05-12,224,3320000.0
+3,1,50,Biology 101,Anthony Russo,Garrett Donovan & Neil Goldman,2011-09-22,301,3930000.0
+3,2,51,Geography of Global Conflict,Joe Russo,Andy Bobrow,2011-09-29,302,3980000.0
+3,3,52,Competitive Ecology,Anthony Russo,Maggie Bandur,2011-10-06,304,3350000.0
+3,4,53,Remedial Chaos Theory,Jeff Melman,Chris McKenna,2011-10-13,303,3780000.0
+3,5,54,Horror Fiction in Seven Spooky Steps,Tristram Shapeero,Dan Harmon,2011-10-27,305,3420000.0
+3,6,55,Advanced Gay,Joe Russo,Matt Murray,2011-11-03,306,3840000.0
+3,7,56,Studies in Modern Movement,Tristram Shapeero,Adam Countee,2011-11-10,307,3490000.0
+3,8,57,Documentary Filmmaking: Redux,Joe Russo,Megan Ganz,2011-11-17,308,3620000.0
+3,9,58,Foosball and Nocturnal Vigilantism,Anthony Russo,Chris Kula,2011-12-01,309,3740000.0
+3,10,59,Regional Holiday Music,Tristram Shapeero,Steve Basilone & Annie Mebane,2011-12-08,311,3600000.0
+3,11,60,Urban Matrimony and the Sandwich Arts,Kyle Newacheck,Vera Santamaria,2012-03-15,312,4750000.0
+3,12,61,Contemporary Impressionists,Kyle Newacheck,Alex Cooley,2012-03-22,310,3870000.0
+3,13,62,Digital Exploration of Interior Design,Dan Eckman,Chris McKenna,2012-03-29,313,3480000.0
+3,14,63,Pillows and Blankets,Tristram Shapeero,Andy Bobrow,2012-04-05,314,3000000.0
+3,15,64,Origins of Vampire Mythology,Steven Tsuchida,Dan Harmon,2012-04-12,315,3090000.0
+3,16,65,Virtual Systems Analysis,Tristram Shapeero,Matt Murray,2012-04-19,316,2770000.0
+3,17,66,Basic Lupine Urology,Rob Schrab,Megan Ganz,2012-04-26,317,3210000.0
+3,18,67,Course Listing Unavailable,Tristram Shapeero,Tim Saccardo,2012-05-03,318,3200000.0
+3,19,68,Curriculum Unavailable,Adam Davidson,Adam Countee,2012-05-10,319,2990000.0
+3,20,69,Digital Estate Planning,Adam Davidson,Matt Warburton,2012-05-17,322,2970000.0
+3,21,70,The First Chang Dynasty,Jay Chandrasekhar,Matt Fusfeld & Alex Cuthbertson,2012-05-17,320,2610000.0
+3,22,71,Introduction to Finality,Tristram Shapeero,Steve Basilone & Annie Mebane,2012-05-17,321,2480000.0
+4,1,72,History 101,Tristram Shapeero,Andy Bobrow,2013-02-07,401,3880000.0
+4,2,73,Paranormal Parentage,Tristram Shapeero,Megan Ganz,2013-02-14,403,2760000.0
+4,3,74,Conventions of Space and Time,Michael Patrick Jann,Maggie Bandur,2013-02-21,404,3080000.0
+4,4,75,Alternative History of the German Invasion,Steven Tsuchida,Ben Wexler,2013-02-28,402,2830000.0
+4,5,76,Cooperative Escapism in Familial Relations,Tristram Shapeero,Steve Basilone & Annie Mebane,2013-03-07,405,3290000.0
+4,6,77,Advanced Documentary Filmmaking,Jay Chandrasekhar,Hunter Covington,2013-03-14,408,2580000.0
+4,7,78,Economics of Marine Biology,Tricia Brock,Tim Saccardo,2013-03-21,406,2950000.0
+4,8,79,Herstory of Dance,Tristram Shapeero,Jack Kukoda,2013-04-04,407,2320000.0
+4,9,80,Intro to Felt Surrogacy,Tristram Shapeero,Gene Hong,2013-04-11,413,2840000.0
+4,10,81,Intro to Knots,Tristram Shapeero,Andy Bobrow,2013-04-18,409,3130000.0
+4,11,82,Basic Human Anatomy,Beth McCarthy-Miller,Jim Rash,2013-04-25,410,2330000.0
+4,12,83,Heroic Origins,"Victor Nelli, Jr.",Steve Basilone & Annie Mebane & Maggie Bandur,2013-05-02,412,2670000.0
+4,13,84,Advanced Introduction to Finality,Tristram Shapeero,Megan Ganz,2013-05-09,411,3080000.0
+5,1,85,Repilot,Tristram Shapeero,Dan Harmon & Chris McKenna,2014-01-02,501,3490000.0
+5,2,86,Introduction to Teaching,Jay Chandrasekhar,Andy Bobrow,2014-01-02,502,3490000.0
+5,3,87,Basic Intergluteal Numismatics,Tristram Shapeero,Erik Sommers,2014-01-09,505,3580000.0
+5,4,88,Cooperative Polygraphy,Tristram Shapeero,Alex Rubens,2014-01-16,503,3070000.0
+5,5,89,Geothermal Escapism,Joe Russo,Tim Saccardo,2014-01-23,504,3020000.0
+5,6,90,Analysis of Cork-Based Networking,Tristram Shapeero,Monica Padrick,2014-01-30,506,3010000.0
+5,7,91,Bondage and Beta Male Sexuality,Tristram Shapeero,Dan Guterman,2014-02-27,507,2560000.0
+5,8,92,App Development and Condiments,Rob Schrab,Jordan Blum & Parker Deay,2014-03-06,508,2790000.0
+5,9,93,VCR Maintenance and Educational Publishing,Tristram Shapeero,Donald Diego,2014-03-13,509,2770000.0
+5,10,94,Advanced Advanced Dungeons & Dragons,Joe Russo,Matt Roller,2014-03-20,510,3320000.0
+5,11,95,G.I. Jeff,Rob Schrab,Dino Stamatopoulos,2014-04-03,513,2500000.0
+5,12,96,Basic Story,Jay Chandrasekhar,Carol Kolb,2014-04-10,512,2560000.0
+5,13,97,Basic Sandwich,Rob Schrab,Ryan Ridley,2014-04-17,511,2870000.0
+6,1,98,Ladders,Rob Schrab,Dan Harmon & Chris McKenna,2015-03-17,602,
+6,2,99,Lawnmower Maintenance & Postnatal Care,Jim Rash & Nat Faxon,Alex Rubens,2015-03-17,601,
+6,3,100,Basic Crisis Room Decorum,Bobcat Goldthwait,Monica Padrick,2015-03-24,605,
+6,4,101,Queer Studies & Advanced Waxing,Jim Rash & Nat Faxon,Matt Lawton,2015-03-31,603,
+6,5,102,Laws of Robotics & Party Rights,Rob Schrab,Dean Young,2015-04-07,604,
+6,6,103,Basic Email Security,Jay Chandrasekhar,Matt Roller,2015-04-14,606,
+6,7,104,Advanced Safety Features,Rob Schrab,Carol Kolb,2015-04-21,607,
+6,8,105,Intro to Recycled Cinema,"Victor Nelli, Jr.",Clay Lapari,2015-04-28,608,
+6,9,106,Grifting 101,Rob Schrab,Ryan Ridley,2015-05-05,609,
+6,10,107,Basic RV Repair and Palmistry,Jay Chandrasekhar,Dan Guterman,2015-05-12,610,
+6,11,108,Modern Espionage,Rob Schrab,Mark Stegemann,2015-05-19,611,
+6,12,109,Wedding Videography,Adam Davidson,Briggs Hatton,2015-05-26,612,
+6,13,110,Emotional Consequences of Broadcast Television,Rob Schrab,Dan Harmon & Chris McKenna,2015-06-02,613,

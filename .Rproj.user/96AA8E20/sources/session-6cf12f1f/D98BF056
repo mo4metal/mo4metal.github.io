@@ -1,0 +1,32 @@
+{
+    "id": "D98BF056",
+    "path": "~/Documents/GitHub/mo4metal.github.io/working.Rmd",
+    "project_path": "working.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1711523594265.0,
+    "source_on_save": false,
+    "relative_order": 6,
+    "properties": {
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "18,0",
+        "scrollLine": "0",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "96:77"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1711523978,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1712041756907,
+    "read_only": false,
+    "read_only_alternatives": []
+}

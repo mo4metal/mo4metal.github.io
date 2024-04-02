@@ -1,0 +1,13 @@
+name: episode_search
+title: episode_search
+username: mo4metal
+account: mo4metal
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11641009
+bundleId: 8444410
+url: https://mo4metal.shinyapps.io/episode_search/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: community_episodes.csv|community_imdb.csv

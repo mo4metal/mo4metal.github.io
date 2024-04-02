@@ -1,0 +1,13 @@
+name: episode_select
+title: episode_select
+username: mo4metal
+account: mo4metal
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11640933
+bundleId:
+url: https://mo4metal.shinyapps.io/episode_select/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: community_episodes.csv|community_imdb.csv

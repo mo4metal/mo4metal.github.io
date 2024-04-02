@@ -1,0 +1,12 @@
+name: imdb_viewership
+title: imdb_viewership
+username: mo4metal
+account: mo4metal
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11641071
+bundleId: 8444474
+url: https://mo4metal.shinyapps.io/imdb_viewership/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
