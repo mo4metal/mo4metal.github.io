@@ -1,0 +1,25 @@
+---
+title: "Week 1 Challenge"
+author: "Zhemin"
+date: "1/16/2024"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Hello!
+
+My name is Zhe Min and I am a Y3 English Literature and CNM student. I like to read and love cats!
+
+```{r, out.height= "180px",out.width= "400px",echo=FALSE,eval=TRUE,fig.cap="funny cat picture"}
+knitr::include_graphics("/Users/ongzhemin/Downloads/fetchimage.jpeg") 
+```
+
+
+```{r, out.height= "180px",out.width= "400px",echo=FALSE,eval=TRUE,fig.cap="r screenshot"}
+knitr::include_graphics("/Users/ongzhemin/Documents/Screenshot 2024-01-16 at 6.46.36 PM.png") 
+```

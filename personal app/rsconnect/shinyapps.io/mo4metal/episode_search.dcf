@@ -5,7 +5,7 @@ account: mo4metal
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11641009
-bundleId: 8444410
+bundleId: 8454201
 url: https://mo4metal.shinyapps.io/episode_search/
 version: 1
 asMultiple: FALSE

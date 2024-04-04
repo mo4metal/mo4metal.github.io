@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Zhe Min’s NM2207 Website",
+    "title": "Zhe Min’s NM2207 Final Project",
     "section": "",
-    "text": "Community was an American sitcom produced by NBC that ran from 2009 to 2014. It had a historically rocky start, middle and end, with show runner Dan Harmon being fired midway during the show, before being brought back for the show’s 5th and 6th seasons.\n\n\n\nCommunity frequently experimented with genre and often utilised its sitcom format to parody existing sitcom tropes. This led it to become a cult classic amongst fans who were frequently exposed to and aware of such tropes, but it meant that Community did not do well with the masses.\nThus, I plan to explore the trends within Community’s rise and fall, with an analysis of each episode’s IMDb ratings. I will also look at categories such as directors and even episode titles. Since Community ran for 6 seasons and 110 episodes, it makes for quite a detailed and interesting analysis.\n\n\n\nI will be using this dataset uploaded by Bill Cruise, which was updated 2 years ago."
+    "text": "Source: TV Insider\n\n\n\n\n\n\n\nCommunity was an American sitcom produced by NBC that ran from 2009 to 2014. It had a historically rocky start, middle and end, with show runner Dan Harmon being fired midway during the show, before being brought back for the show’s 5th and 6th seasons.\nCommunity frequently experimented with genre and often utilised its sitcom format to parody existing sitcom tropes. This led it to become a cult classic amongst fans who were frequently exposed to and aware of such tropes, but it meant that Community did not do well with the masses.\nThus, I plan to explore the trends within Community’s rise and fall, with an analysis of each episode’s IMDb ratings. I will also look at categories such as directors and even episode titles. Since Community ran for 6 seasons and 110 episodes, it makes for quite a detailed and interesting analysis.\n\n\n\nThe question I am going to answer is “What can we find out from the run of the tv show Community?”\n\n\n\nCommunity has a legacy of being a cult classic television show. What this means is that Community is considered culturally relevant despite it being released a decade ago. It also still has a consistent and dedicated fanbase, and it has been argued to have changed the way people produce and watch sitcoms today. According to IMDb, user ratings influence viewer choices and perceptions of TV shows, making it crucial to analyze how “Community” is perceived across its seasons to gauge its overall impact and success.\nAccording to Screenrant, Community often experimented with genres and was not like other sitcoms airing at the time. Charting the show’s success can help promote new and interesting sitcoms in our current time period. Additionally, many established directors such as Joe and Anthony Russo made their mark in Community episodes. Charting the series’s directors could allow us to understand more about the series’s popularity.\nOn a personal level, Community is one of my favourite sitcoms. I fell in love with it in 2020, during the pandemic, and while I was not there personally, watching it while it aired, I noticed that it still had immense popularity despite being released in 2009. It is hard to go anywhere on the internet without bumping into a reference to Community. With talks of a movie being produced a decade after its last season, it’s clear that Community had a long lasting impact on the world. Hence, I want to find out as much as I can from its run.\n\n\n\nI will be using this dataset uploaded by Bill Cruise, which was updated 2 years ago.\nThere are 2 csv files, “community_episodes.csv” and “community_imdb.csv”. To make the process of my data analysis easier, I chose to combine both csvs into one, and clean up the data by removing a duplicated column, “episode_num_overall”. I named this csv “community.csv”. The name of the variables in the file are as follows:\n\n\n [1] \"...1\"                  \"season\"                \"title\"                \n [4] \"original_air_date\"     \"episode_num_in_season\" \"episode_num_overall\"  \n [7] \"directed_by\"           \"written_by\"            \"prod_code\"            \n[10] \"us_viewers\"            \"imdb_rating\"           \"total_votes\"          \n[13] \"desc\"                 \n\n\nFor context, the variable “desc” stands for “description”, and provides a short description of a particular episode as provided by IMDB."
   },
   {
     "objectID": "about.html",
@@ -16,30 +16,30 @@
   {
     "objectID": "index.html#community-2009-2014",
     "href": "index.html#community-2009-2014",
-    "title": "Zhe Min’s NM2207 Website",
+    "title": "Zhe Min’s NM2207 Final Project",
     "section": "",
-    "text": "Community was an American sitcom produced by NBC that ran from 2009 to 2014. It had a historically rocky start, middle and end, with show runner Dan Harmon being fired midway during the show, before being brought back for the show’s 5th and 6th seasons."
+    "text": "Source: TV Insider"
   },
   {
     "objectID": "index.html#data-analysis",
     "href": "index.html#data-analysis",
-    "title": "Zhe Min’s NM2207 Website",
+    "title": "Zhe Min’s NM2207 Final Project",
     "section": "",
     "text": "Community frequently experimented with genre and often utilised its sitcom format to parody existing sitcom tropes. This led it to become a cult classic amongst fans who were frequently exposed to and aware of such tropes, but it meant that Community did not do well with the masses.\nThus, I plan to explore the trends within Community’s rise and fall, with an analysis of each episode’s IMDb ratings. I will also look at categories such as directors and even episode titles. Since Community ran for 6 seasons and 110 episodes, it makes for quite a detailed and interesting analysis."
   },
   {
     "objectID": "index.html#dataset",
     "href": "index.html#dataset",
-    "title": "Zhe Min’s NM2207 Website",
+    "title": "Zhe Min’s NM2207 Final Project",
     "section": "",
-    "text": "I will be using this dataset uploaded by Bill Cruise, which was updated 2 years ago."
+    "text": "I will be using this dataset uploaded by Bill Cruise, which was updated 2 years ago.\nThere are 2 csv files, “community_episodes.csv” and “community_imdb.csv”. To make the process of my data analysis easier, I chose to combine both csvs into one, and clean up the data by removing a duplicated column, “episode_num_overall”. I named this csv “community.csv”. The name of the variables in the file are as follows:\n\n\n [1] \"...1\"                  \"season\"                \"title\"                \n [4] \"original_air_date\"     \"episode_num_in_season\" \"episode_num_overall\"  \n [7] \"directed_by\"           \"written_by\"            \"prod_code\"            \n[10] \"us_viewers\"            \"imdb_rating\"           \"total_votes\"          \n[13] \"desc\"                 \n\n\nFor context, the variable “desc” stands for “description”, and provides a short description of a particular episode as provided by IMDB."
   },
   {
     "objectID": "data_story.html",
     "href": "data_story.html",
     "title": "Data Story",
     "section": "",
-    "text": "Select an episode to learn more about it!\n \nAs can be viewed from the episode selection, Community uses the format of a university module name for the title of each episode. This can be argued to increase a feeling of relatability for viewers who have attended / are familiar with such modules. Such episodes also become more interesting and easily recognisable."
+    "text": "Select an episode to learn more about it!\n \nAs can be viewed from the episode selection, Community uses the format of a university module name for the title of each episode. This can be argued to increase a feeling of relatability for viewers who have attended / are familiar with such modules. Such episodes also become more interesting and easily recognisable.\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\nFrom this bar chart, we can see that Community has had a fairly successful run so far. The IMDB ratings of each season is fairly consistent, ranging from 7.4 to 8.6. Seasons 2 and 3 have the highest mean IMDB ratings, and this could be attributed to the notion that Community had finally found its footing after its first season. Seasons 2 and 3 also have many special episodes, such as episode 6 of season 2, “Epidemiology”, which has an IMDB rating of 9.3. This particular episode was a parody of a zombie movie, and it was also the season’s Halloween episode. Hence, such special episodes can be attributed to the seasons’ higher IMDB ratings.\nNotably, Season 4 has the lowest mean IMDB rating, at 7.4. This can be attributed to the fact that show runner Dan Harmon was let go from the show after Season 3. This season is often called the “Gas Leak Season”, and it features what fans consider to be writing that was not on par with the rest of the show. The loss of the person who arguably best understood the show thus lead to a drop in quality. After season 4 ended, Dan Harmon was brought back for Season 5, which explains the higher mean IMDB rating, 8.4.\nFinally, the last season also has a lower mean IMDB rating. This could be due to the fact that by this season, many once beloved characters such as Troy (Donald Glover) and Shirley (Yvette Nicole Brown) had left the show. Hence, such departures from the show impacted the fan base’s perceptions of the episodes in Season 6, leading to a lower mean IMDB score.\n\n\n\n \nInterestingly, there does not seem to be a positive relationship between IMDB ratings and Viewership numbers. This means that popular episodes and fan-favourite episodes are not correlated.\n\n\n\n\n\n\n\n\nViewership truly faltered, slowing down over the seasons. This could be attributed to the fact that Community often did parody and special episodes, which require a prior knowledge of what was being parodied. Such episodes increased over the run of the show, solidfying Community’s standing as a show that was meant for people who were huge sitcom buffs, but this unfortunately alienated casual viewers.\nUnfortunately, because Community was acquired by the now defunct streaming website, Yahoo! Screen, it was not aired on network television. Hence, there is no details on the number of viewers that Community had in its sixth season.\nUltimately, Community’s declining trend in viewership could mean that the unique episodes of Community did badly with a wider audience. This could substantiate the idea that many viewers preferred a more causal, relaxed viewing, and did not want to follow the show’s intricate and detailed parodies and plots.\nHowever, this reduction of viewers could solidify the show’s cult classic status. Community still has a very dedicated fan base despite it being a decade after the show’s last season. Perhaps a lower viewership could create a sense of uniqueness amongst viewers, as they could view having watched Community to be a niche interest. Greater bonds between viewers could be formed this way."
   },
   {
     "objectID": "data_story.html#episode-summaries",
@@ -116,7 +116,7 @@
     "href": "data_story.html#viewership-trends-over-the-seasons",
     "title": "Data Story",
     "section": "",
-    "text": "Warning: Removed 13 rows containing missing values or values outside the scale range\n(`geom_point()`)."
+    "text": "Viewership truly faltered, slowing down over the seasons. This could be attributed to the fact that Community often did parody and special episodes, which require a prior knowledge of what was being parodied. Such episodes increased over the run of the show, solidfying Community’s standing as a show that was meant for people who were huge sitcom buffs, but this unfortunately alienated casual viewers.\nUnfortunately, because Community was acquired by the now defunct streaming website, Yahoo! Screen, it was not aired on network television. Hence, there is no details on the number of viewers that Community had in its sixth season.\nUltimately, Community’s declining trend in viewership could mean that the unique episodes of Community did badly with a wider audience. This could substantiate the idea that many viewers preferred a more causal, relaxed viewing, and did not want to follow the show’s intricate and detailed parodies and plots.\nHowever, this reduction of viewers could solidify the show’s cult classic status. Community still has a very dedicated fan base despite it being a decade after the show’s last season. Perhaps a lower viewership could create a sense of uniqueness amongst viewers, as they could view having watched Community to be a niche interest. Greater bonds between viewers could be formed this way."
   },
   {
     "objectID": "data_story.html#mean-imdb-rating-by-director",
@@ -124,5 +124,40 @@
     "title": "Data Story",
     "section": "",
     "text": "library(dplyr)\n\nbest_director &lt;- community_data %&gt;%\n  group_by(directed_by) %&gt;%\n  summarise(mean_imdb_rating = mean(imdb_rating), \n            count = n()) %&gt;%\n  arrange(desc(mean_imdb_rating))\n\n\nggplot(best_director, aes(x = reorder(directed_by, mean_imdb_rating), y = mean_imdb_rating)) +\n  geom_col(fill = \"pink\", width = 0.7) +\n  labs(x = \"Director\", y = \"Mean IMDb Rating\", title = \"Mean IMDb Ratings by Director\") +\n  theme_minimal() +\n  coord_flip()"
+  },
+  {
+    "objectID": "data_story.html#mean-imdb-ratings-per-season",
+    "href": "data_story.html#mean-imdb-ratings-per-season",
+    "title": "Data Story",
+    "section": "",
+    "text": "From this bar chart, we can see that Community has had a fairly successful run so far. The IMDB ratings of each season is fairly consistent, ranging from 7.4 to 8.6. Seasons 2 and 3 have the highest mean IMDB ratings, and this could be attributed to the notion that Community had finally found its footing after its first season. Seasons 2 and 3 also have many special episodes, such as episode 6 of season 2, “Epidemiology”, which has an IMDB rating of 9.3. This particular episode was a parody of a zombie movie, and it was also the season’s Halloween episode. Hence, such special episodes can be attributed to the seasons’ higher IMDB ratings.\nNotably, Season 4 has the lowest mean IMDB rating, at 7.4. This can be attributed to the fact that show runner Dan Harmon was let go from the show after Season 3. This season is often called the “Gas Leak Season”, and it features what fans consider to be writing that was not on par with the rest of the show. The loss of the person who arguably best understood the show thus lead to a drop in quality. After season 4 ended, Dan Harmon was brought back for Season 5, which explains the higher mean IMDB rating, 8.4.\nFinally, the last season also has a lower mean IMDB rating. This could be due to the fact that by this season, many once beloved characters such as Troy (Donald Glover) and Shirley (Yvette Nicole Brown) had left the show. Hence, such departures from the show impacted the fan base’s perceptions of the episodes in Season 6, leading to a lower mean IMDB score."
+  },
+  {
+    "objectID": "data_story.html#imdb-ratings-against-viewership",
+    "href": "data_story.html#imdb-ratings-against-viewership",
+    "title": "Data Story",
+    "section": "",
+    "text": "Interestingly, there does not seem to be a positive relationship between IMDB ratings and Viewership numbers. This means that popular episodes and fan-favourite episodes are not correlated."
+  },
+  {
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "Zhe Min’s NM2207 Final Project",
+    "section": "",
+    "text": "Community was an American sitcom produced by NBC that ran from 2009 to 2014. It had a historically rocky start, middle and end, with show runner Dan Harmon being fired midway during the show, before being brought back for the show’s 5th and 6th seasons.\nCommunity frequently experimented with genre and often utilised its sitcom format to parody existing sitcom tropes. This led it to become a cult classic amongst fans who were frequently exposed to and aware of such tropes, but it meant that Community did not do well with the masses.\nThus, I plan to explore the trends within Community’s rise and fall, with an analysis of each episode’s IMDb ratings. I will also look at categories such as directors and even episode titles. Since Community ran for 6 seasons and 110 episodes, it makes for quite a detailed and interesting analysis."
+  },
+  {
+    "objectID": "index.html#main-question",
+    "href": "index.html#main-question",
+    "title": "Zhe Min’s NM2207 Final Project",
+    "section": "",
+    "text": "The question I am going to answer is “What can we find out from the run of the tv show Community?”"
+  },
+  {
+    "objectID": "index.html#why-ask-this-question",
+    "href": "index.html#why-ask-this-question",
+    "title": "Zhe Min’s NM2207 Final Project",
+    "section": "",
+    "text": "Community has a legacy of being a cult classic television show. What this means is that Community is considered culturally relevant despite it being released a decade ago. It also still has a consistent and dedicated fanbase, and it has been argued to have changed the way people produce and watch sitcoms today. According to IMDb, user ratings influence viewer choices and perceptions of TV shows, making it crucial to analyze how “Community” is perceived across its seasons to gauge its overall impact and success.\nAccording to Screenrant, Community often experimented with genres and was not like other sitcoms airing at the time. Charting the show’s success can help promote new and interesting sitcoms in our current time period. Additionally, many established directors such as Joe and Anthony Russo made their mark in Community episodes. Charting the series’s directors could allow us to understand more about the series’s popularity.\nOn a personal level, Community is one of my favourite sitcoms. I fell in love with it in 2020, during the pandemic, and while I was not there personally, watching it while it aired, I noticed that it still had immense popularity despite being released in 2009. It is hard to go anywhere on the internet without bumping into a reference to Community. With talks of a movie being produced a decade after its last season, it’s clear that Community had a long lasting impact on the world. Hence, I want to find out as much as I can from its run."
   }
 ]

@@ -1,0 +1,5 @@
+"0",""
+"0","ggplot(community, aes(x = season, y = us_viewers)) +"
+"0","  geom_point() +"
+"0","  scale_y_continuous(labels = scales::comma, limits = c(1000000, 8000000)) +"
+"0","  labs(x = ""Season"", y = ""Number of Viewers"", title = ""Viewership Trends of Episodes Over Seasons"")"
