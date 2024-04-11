@@ -1,7 +1,7 @@
 {
-  "hash": "a754ce02c0472c0b163d8ffb898e69ac",
+  "hash": "3d1b277e64e254ac8342a44416779eab",
   "result": {
-    "markdown": "---\ntitle: \"About\"\n---\n\n\nAbout this site\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "markdown": "---\ntitle: \"About\"\n---\n\n\n# ABOUT ME\n\nI am a Y3 Literature major with a second major in Communications and New Media.\n\nI like cats and Pierce the Veil :) My favourite TV shows are NBC's 30 Rock, Community, Arrested Development and Netflix's Russian Doll.\n\nHere I am playing my favourite sport:\n\n\n::: {.cell}\n::: {.cell-output-display}\n![My passion is doing nothing except playing volleyball](DSC00075.JPG){width=800px height=400px}\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

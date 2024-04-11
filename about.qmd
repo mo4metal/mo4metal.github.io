@@ -6,4 +6,12 @@ title: "About"
 
 I am a Y3 Literature major with a second major in Communications and New Media.
 
-I like cats and Pierce the Veil :) My favourite TV shows are NBC's 30 Rock, Community and Netflix's Russian Doll.
+I like cats and Pierce the Veil :) My favourite TV shows are NBC's 30 Rock, Community, Arrested Development and Netflix's Russian Doll.
+
+Here I am playing my favourite sport:
+
+```{r, out.height= "400px",out.width= "800px",echo=FALSE,eval=TRUE,fig.cap="My passion is doing nothing except playing volleyball", message=FALSE}
+
+knitr::include_graphics("DSC00075.JPG")
+
+```

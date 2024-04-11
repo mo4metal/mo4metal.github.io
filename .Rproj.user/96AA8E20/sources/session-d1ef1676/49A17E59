@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/mo4metal.github.io/about.qmd",
     "project_path": "about.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "1813377612",
     "contents": "",
     "dirty": false,
     "created": 1710232537995.0,
@@ -16,16 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "2:0",
+        "rmdVisualModeLocation": "116:0",
         "cursorPosition": "4,0",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1710294903,
+    "lastKnownWriteTime": 1712838208,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1710294903752,
+    "last_content_update": 1712838208739,
     "read_only": false,
     "read_only_alternatives": []
 }
