@@ -10,7 +10,7 @@ I like cats and Pierce the Veil :) My favourite TV shows are NBC's 30 Rock, Comm
 
 Here I am playing my favourite sport:
 
-```{r, out.height= "400px",out.width= "800px",echo=FALSE,eval=TRUE,fig.cap="My passion is doing nothing except playing volleyball", message=FALSE}
+```{r, out.height= "400px",out.width= "700px",echo=FALSE,eval=TRUE,fig.cap="My passion is doing nothing except playing volleyball", message=FALSE}
 
 knitr::include_graphics("DSC00075.JPG")
 
