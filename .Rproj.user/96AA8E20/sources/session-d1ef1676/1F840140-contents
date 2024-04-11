@@ -1,0 +1,30 @@
+---
+title: "Week 12 Diary Entry"
+author: "Zhemin Ong"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Week 12 Diary Entry
+
+### Reflect on your experience doing the project using R
+
+Starting the project was quite daunting to me because I still consider myself a beginner at R. Honestly I did not have prior good experiences learning R in CHS courses and prior NM courses as well, hence I felt very unsure at first if I would be able to create a sound and working data story / final project at all. However, over the course of the semester, I was able to put all that I have learnt into this data story. 
+
+I think that R is definitely easier to learn than other coding languages, and I think that practising consistently over the semester, and doing the code-alongs and challenges and playing around with R in my spare time really helped me solidify my understanding. I would not say that I’m really good at it now, but I will say that I’m pretty happy with the effort I put into this project and what I’ve produced so far. I always feel a sense of satisfaction when the code I’ve written produces the exact result that I wanted, and I think that this project would probably drive me to do more things with R in the future.
+
+### What have you learned in NM2207, and how can that be helpful in your future career?
+
+Through NM2207, I’ve learnt how to manipulate, analyse and visualise data. My favourite thing so far that I’ve learnt was probably manipulating data in Week 4. I think that it really helps visualise the data that you have, especially when it’s really common to get untidy data in a huge csv file. Another thing that I really enjoyed learning in NM2207 was ggplot, and how best to visualise data in a way that is easy to understand. I think I really enjoy it when the topics I’ve learnt over the week rely on what I’ve learnt prior. Learning to manipulate and select, arrange, filter and even mutate data allows me to make a cleaner and more concise data visualisation. 
+
+I plan to go into publishing in the future. I think that using R would be helpful in helping me analyse trends and waves of popularity in the book market. I think that it’s important to prove distinctly to marketing teams / stakeholders what trends are doing well, in order to better cater to audiences, and I think that R can help me analyse and visualise any data that has been collected so far.
+
+### Try to identify use-cases within your specialisation and future industry that you might benefit by using R.
+
+One way that I can use R would be to analyse data relating to a list of best-sellers in these current years, and see what genres are most popular now. I can also use R to chart and visualise any trends in this data. I can also use ggplot to visualise trends in a particular book’s sales.
