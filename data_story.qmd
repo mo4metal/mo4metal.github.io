@@ -124,9 +124,9 @@ However, this reduction of viewers could solidify the show's cult classic status
 <iframe height="400" width="100%" frameborder="no" src="https://mo4metal.shinyapps.io/viewership_per_season/"> </iframe>
 ```
 
-Viewership can be seen as faltering throughout all seasons, with a steady downward trend throughout the season. This could be argued to be linked to the fact that Community did not do well on mainstream television, and thus lost viewership over time as plot lines wihtin seasons became more complicated. 
+Viewership can be seen as faltering throughout all seasons, with a steady downward trend throughout the season. This could be argued to be linked to the fact that Community did not do well on mainstream television, and thus lost viewership over time as plot lines within seasons became more complicated. 
 
-However, there are some notable outliers to this trend. Season 3, episode 
+However, there are some notable outliers to this trend. Season 3, episode 11 notes a huge spike in viewership. This can be attributed to the fact that the show had, after its 10th episode, had gone on hiatus, and was set to be shelved by NBC. However, these plans were scrapped, and Community returned to televisions with Season 3, episode 11, "Urban Matrimony and the Sandwich Arts". Creator Dan Harmon reportedly wanted this episode to be ["more accessible to a general audience"](https://en.wikipedia.org/wiki/Urban_Matrimony_and_the_Sandwich_Arts#cite_note-1), and thus the episode does not contain any special hijinks or parodies, but centers around a very straightforward wedding. However, after this, viewings dropped as Community returned to its typical wacky premise, with Season 3 episode 12 centering around the main cast being hired to imitate other celebrities for a teenager's party. 
 
 As mentioned before, due to Community being acquired by Yahoo, there is no viewership data for Season Six. This is quite a shame, as the data from Community's sixth season could allow us to understand if the move from mainstream television to a streaming website would have affected viewership. I argue that this shift would have drastically reduced viewership numbers, especially since the sixth season was hosted on a relatively unknown and now defunct service. 
 
